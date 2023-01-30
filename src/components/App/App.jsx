@@ -1,4 +1,4 @@
-import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
+import { TransactionHistory } from '../TransactionHistory/TransactionHistory';
 import { FriendList } from '../FriendList/FriendList';
 import { Statistics } from '../Statistics/Statistics';
 import { Profile } from '../Profile/Profile';
