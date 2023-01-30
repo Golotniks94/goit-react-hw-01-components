@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+
 export const TransactionHistoryTable = styled.table`
   /* display: flex;
   flex-direction: column; */
