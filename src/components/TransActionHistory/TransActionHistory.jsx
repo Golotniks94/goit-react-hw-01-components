@@ -5,6 +5,7 @@ import {
   TrColumn,
   TdString,
 } from './TransactionHistory.styled';
+
 export const TransactionHistory = ({ items }) => {
   return (
     <TransactionHistoryTable>
