@@ -1,49 +1,38 @@
 import PropTypes from 'prop-types';
-import {
-  ProfileDiv,
-  Description,
-  NameUser,
-  TextDescription,
-  Stats,
-  ItemStats,
-  SpanLabel,
-  QuantitySpan,
-  PhotoAvatar,
-} from './Profile.styled';
-
-export function Profile({
+import css from './Profile.module.css';
+export const Profile = ({
   username,
   tag,
   location,
   avatar,
   stats: { followers, views, likes },
-}) {
+}) => {
   return (
-    <ProfileDiv>
-      <Description>
-        <PhotoAvatar src={avatar} alt={username} />
-        <NameUser>{username}</NameUser>
-        <TextDescription>@{tag}</TextDescription>
-        <TextDescription>{location}</TextDescription>
+    <div className={css.profile}>
+      <div className={css.description}>
+        <img src={avatar} alt="User avatar" className={css.avatar} />
+        <p className={css.name}>{username}</p>
+        <p className={css.tag}>@{tag}</p>
+        <p className={css.location}>{location}</p>
+      </div>
 
-        <Stats>
-          <ItemStats>
-            <SpanLabel>Followers</SpanLabel>
-            <QuantitySpan>{followers}</QuantitySpan>
-          </ItemStats>
-          <ItemStats>
-            <SpanLabel>Views</SpanLabel>
-            <QuantitySpan>{views}</QuantitySpan>
-          </ItemStats>
-          <ItemStats>
-            <SpanLabel>Likes</SpanLabel>
-            <QuantitySpan>{likes}</QuantitySpan>
-          </ItemStats>
-        </Stats>
-      </Description>
-    </ProfileDiv>
+      <ul className={css.stats}>
+        <li className={css.items}>
+          <span className={css.label}>Followers</span>
+          <span className={css.quantity}>{followers}</span>
+        </li>
+        <li className={css.items}>
+          <span className={css.label}>Views</span>
+          <span className={css.quantity}>{views}</span>
+        </li>
+        <li className={css.items}>
+          <span className={css.label}>Likes</span>
+          <span className={css.quantity}>{likes}</span>
+        </li>
+      </ul>
+    </div>
   );
-}
+};
 
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
