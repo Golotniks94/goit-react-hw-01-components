@@ -10,7 +10,6 @@ import {
   QuantitySpan,
   PhotoAvatar,
 } from './Profile.styled';
-
 export function Profile({
   username,
   tag,

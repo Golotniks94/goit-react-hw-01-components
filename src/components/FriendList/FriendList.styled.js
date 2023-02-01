@@ -11,7 +11,6 @@ export const FriendListUl = styled.ul`
   padding-bottom: 30px;
   background-color: lightgoldenrodyellow;
 `;
-
 export const Item = styled.li`
   display: flex;
   margin-bottom: 30px;

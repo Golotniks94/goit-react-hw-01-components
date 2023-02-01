@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { Title, SectionStat, StatList, Item } from './Statistics.styled';
-
 export function Statistics({ title = 'Upload stats', stats }) {
   function randomHexColor() {
     return `#${Math.floor(Math.random() * 16777215).toString(16)}`;

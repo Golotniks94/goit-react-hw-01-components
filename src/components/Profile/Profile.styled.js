@@ -18,14 +18,12 @@ export const Description = styled.div`
   width: 350px;
   border: 1px solid #0f0f4f;
 `;
-
 export const PhotoAvatar = styled.img`
   display: block;
   height: 220px;
   width: 200px;
   margin-top: 20px;
 `;
-
 export const NameUser = styled.p`
   font-size: 22px;
   line-height: 1.62;
@@ -33,7 +31,6 @@ export const NameUser = styled.p`
   color: #0f0f4f;
   margin-top: 20px;
 `;
-
 export const TextDescription = styled.p`
   margin-top: 10px;
   font-size: 16px;
@@ -41,7 +38,6 @@ export const TextDescription = styled.p`
   font-weight: 18px;
   color: #484137;
 `;
-
 export const Stats = styled.ul`
   background-color: #fff;
   width: 100%;
@@ -54,7 +50,6 @@ export const Stats = styled.ul`
   border-bottom-right-radius: 10px;
   border-top: 1px solid #0f0f4f;
 `;
-
 export const ItemStats = styled.li`
   width: 100%;
   display: flex;
@@ -66,7 +61,6 @@ export const ItemStats = styled.li`
   }
   padding: 5px;
 `;
-
 export const SpanLabel = styled.span`
   display: flex;
   font-size: 16px;
